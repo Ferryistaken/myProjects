@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+$baseColor: #232b2b;
+$footerColor: #182121;
+$color1: #011627;
+$color2: #2EC4B6;
+$color3: #E71D36;
+$color4: #FF9F1C;
+$color5: #FDFFFC;
+// custom palette
+// baf2bb
+// baf2d8
+// bad7f2
+// f2bac9
+// f2e2ba
+* {
+    font-family: "Varela Round", monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $baseColor;
+    color: $color5;
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16;
+    color: $color4;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.normalText {
+    color: $color5;
+    font-size: 17px;
+    padding-left: 30px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 6%;
+    height: 5%;
+}
+
+.navLinks {
+    list-style: none;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a {
+    transition: all 0.3 ease 0s;
+}
+
+.navLinks li a:hover {
+    transition: all 0.3 ease 0s;
+    color: $color3;
+}
+
+button {
+    padding: 9px 25px;
+    color: $baseColor;
+    background-color: $color2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: $baseColor;
+    color: $color2;
+}
+
+.question {
+    text-align: left;
+    padding-left: 30px;
+    color: antiquewhite;
+}
+
+.title {
+    color: silver;
+    padding: 0px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+footer {
+    text-align: center;
+    margin: 0px;
+    background-color: $footerColor;
+    color: silver;
+    padding: 80px;
+    margin-top: auto;
+    border: 0px;
+}
+
+.footerText {
+    margin: 0px;
+    background-color: $footerColor;
+}
+
+.footerContainer {
+    background-color: $footerColor;
+}
+
+#copyright {
+    float: left;
+    background-color: $footerColor;
+    color: rgba($color: $color5, $alpha: 0.3);
+}
+
+.grid {
+    background-color: $footerColor;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#gitHubLogo {
+    width: 10%;
+    background-color: $footerColor;
+    vertical-align: baseline;
+    float: left;
+}

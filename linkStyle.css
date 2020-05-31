@@ -20,17 +20,17 @@ button {
   text-decoration: none;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30px 10%;
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-position: outside;
+  margin: 3vh;
+}
+
+#links {
+  list-style-type: initial;
 }
 
 body {
@@ -44,67 +44,6 @@ body {
   min-height: 100vh;
 }
 
-.normalText {
-  color: #FDFFFC;
-  font-size: 17px;
-  padding-left: 30px;
-}
-
-.logo {
-  cursor: pointer;
-  width: 6%;
-  height: 5%;
-}
-
-.navLinks {
-  list-style: none;
-}
-
-.navLinks li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.navLinks li a {
-  -webkit-transition: all 0.3 ease 0s;
-  transition: all 0.3 ease 0s;
-}
-
-.navLinks li a:hover {
-  -webkit-transition: all 0.3 ease 0s;
-  transition: all 0.3 ease 0s;
-  color: #E71D36;
-}
-
-button {
-  padding: 9px 25px;
-  color: #232b2b;
-  background-color: #2EC4B6;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-button:hover {
-  background-color: #232b2b;
-  color: #2EC4B6;
-}
-
-.question {
-  text-align: left;
-  padding-left: 30px;
-  color: antiquewhite;
-}
-
-.title {
-  color: silver;
-  padding: 0px;
-  text-align: center;
-  color: antiquewhite;
-}
-
 footer {
   text-align: center;
   margin: 0px;
@@ -113,6 +52,10 @@ footer {
   padding: 80px;
   margin-top: auto;
   border: 0px;
+}
+
+.normalText {
+  margin-left: 10px;
 }
 
 .footerText {
@@ -155,4 +98,25 @@ footer {
   vertical-align: baseline;
   float: left;
 }
-/*# sourceMappingURL=style.css.map */
+
+.title {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#quoteContainer {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 80px;
+}
+
+.quote {
+  color: rgba(253, 255, 252, 0.6);
+  margin-left: 40px;
+}
+
+#email {
+  color: #2EC4B6;
+  text-align: center;
+}
+/*# sourceMappingURL=linkStyle.css.map */

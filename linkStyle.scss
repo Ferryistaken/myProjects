@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+$baseColor: #232b2b;
+$footerColor: #182121;
+$color1: #011627;
+$color2: #2EC4B6;
+$color3: #E71D36;
+$color4: #FF9F1C;
+$color5: #FDFFFC;
+* {
+    font-family: "Varela Round", monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $baseColor;
+    color: $color5;
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16;
+    color: $color4;
+    text-decoration: none;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-position: outside;
+    margin: 3vh;
+}
+
+#links {
+    list-style-type: initial;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    text-align: center;
+    margin: 0px;
+    background-color: $footerColor;
+    color: silver;
+    padding: 80px;
+    margin-top: auto;
+    border: 0px;
+}
+
+.normalText {
+    margin-left: 10px;
+}
+
+.footerText {
+    margin: 0px;
+    background-color: $footerColor;
+}
+
+.footerContainer {
+    background-color: $footerColor;
+}
+
+#copyright {
+    float: left;
+    background-color: $footerColor;
+    color: rgba($color: $color5, $alpha: 0.3);
+}
+
+.grid {
+    background-color: $footerColor;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#gitHubLogo {
+    width: 10%;
+    background-color: $footerColor;
+    vertical-align: baseline;
+    float: left;
+}
+
+.title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#quoteContainer {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 80px;
+}
+
+.quote {
+    color: rgba($color: $color5, $alpha: 0.6);
+    margin-left: 40px;
+}
+
+#email {
+    color: $color2;
+    text-align: center;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,42 @@
     <script src="scripts.js"></script>
     <title>Ferry's Projects/Achievements</title>
 </head>
+
 <body>
-    <header>
-      <img class="logo" src="images/keyboard.svg" alt="logo">
-      <nav>
-        <ul class="navLinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Links</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="#"><button>Contact</button></a>
+    <header id="navBar">
+        <img class="logo" src="images/keyboard.svg" alt="logo">
+        <nav>
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects/testProject.html">Projects</a></li>
+                <li><a href="links.html">Links</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
     </header>
     <h1 class="title">All my projects in one site</h1>
     <br>
     <br>
-    <h3 class="question">What do I mean by project?</h3>
-    <header>By project I mean any achievement worth sharing, or that could help a future developer in his current projects, or that I feel the world should know about</header>
+    <h3 class="question">What do I mean by <i class="question" style="padding-left: 0px;">project?</i></h3>
+    <header class="normalText">By project I mean any achievement worth sharing, or that could help a future developer in his current projects, or that I feel the world should know about</header>
+    <footer>
+        <div class="grid">
+            <div class="footerContainer">
+                <p id="copyright" class="footerText">Copyright &copy
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>, Alessandro Ferrari</p>
+            </div>
+            <div class="footerContainer">
+                <p class="footerText">
+                    <a href="https://github.com/Ferryistaken">
+                        <img src="images/icons8-github.svg" alt="Github" id="gitHubLogo">
+                    </a>
+                    You can find me on <a class="footerText" href="https://github.com/Ferryistaken">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
