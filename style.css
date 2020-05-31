@@ -4,14 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24242A;
+    background-color: #2D3142;
 }
 
 li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16;
-    color: #ecf0f1;
+    color: #BFC0C0;
     text-decoration: none;
 }
 
@@ -24,6 +24,7 @@ header {
 
 .logo {
     cursor: pointer;
+    width: 8%;
 }
 
 .navLinks {
@@ -47,7 +48,7 @@ header {
 
 button {
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    background-color: rgba(79, 93, 117, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -55,5 +56,14 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: rgba(79, 93, 117, 0.8);
+}
+
+.title {
+    text-align: center;
+}
+
+.question {
+    text-align: left;
+    padding-left: 30px;
 }
